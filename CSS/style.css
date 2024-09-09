@@ -1,0 +1,98 @@
+.menu {
+    display: flex; /* Utiliza o layout flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    background-color: rgb(241, 237, 237); /* Define a cor de fundo do menu */
+    border-bottom: 2px solid black; /* Adiciona uma borda inferior preta */
+    padding: 10px 20px; /* Adiciona espaço interno ao redor do conteúdo */
+    position: relative; /* Define o menu como relativo para posicionamento */
+    color: red; /* Define a cor do texto como azul-violeta */
+}
+.menu img {
+    height: 60px; /* Define a altura das imagens dentro do menu */
+}
+.menu .menu-icon {
+    font-size: 24px; /* Define o tamanho da fonte para o ícone do menu */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    margin-right: 20px; /* Adiciona espaço à direita do ícone */
+}
+.menu .title {
+    flex-grow: 1; /* Faz o título ocupar o espaço restante no flex container */
+    text-align: center; /* Centraliza o título horizontalmente */
+    color: black; /* Define a cor do título como preto */
+    font-size: 24px; /* Define o tamanho da fonte do título */
+}
+.dropdown {
+    display: none; /* Esconde o menu suspenso por padrão */
+    position: absolute; /* Posiciona o menu em relação ao item pai */
+    top: 100%; /* Coloca o menu suspenso abaixo do menu principal */
+    left: 0; /* Alinha o menu suspenso à esquerda do ícone */
+    background-color: red; /* Define a cor de fundo do menu suspenso */
+    border: 1px solid black; /* Adiciona uma borda preta ao menu suspenso */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Adiciona sombra ao menu para efeito de profundidade */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos na página */
+}
+.dropdown a {
+    display: block; /* Exibe os links como blocos para que ocupem toda a largura */
+    padding: 10px 20px; /* Adiciona espaço interno ao redor do texto dos links */
+    color: white; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    border-bottom: 1px solid rgb(165, 23, 23); /* Adiciona uma borda inferior vermelha */
+}
+.dropdown a:hover {
+    background-color: #f1f1f1; /* Altera a cor de fundo quando o mouse passa sobre o link */
+}
+.dropdown a:last-child {
+    border-bottom: none; /* Remove a borda inferior do último link no menu suspenso */
+}
+.news-grid {
+    display: flex; /* Utiliza flexbox para organizar os contêineres de notícias */
+    flex-wrap: wrap; /* Permite que os contêineres quebrem linha se necessário */
+    justify-content: space-around; /* Distribui os contêineres igualmente com espaço ao redor */
+    padding: 20px; /* Adiciona espaço interno ao redor do grid */
+    gap: 20px; /* Adiciona espaço entre os contêineres de notícias */
+}
+.news-container {
+    width: 300px; /* Define a largura dos contêineres de notícias */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara aos contêineres */
+    border-radius: 8px; /* Arredonda os cantos dos contêineres */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    text-align: center; /* Centraliza o conteúdo textualmente */
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra do contêiner */
+}
+.news-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao contêiner quando o mouse passa sobre ele */
+}
+.news-image img {
+    width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+}
+.news-headline {
+    padding: 15px; /* Adiciona espaço interno ao redor da manchete */
+    font-size: 18px; /* Define o tamanho da fonte da manchete */
+    font-weight: bold; /* Deixa o texto da manchete em negrito */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+    background-color: #f8f8f8; /* Define a cor de fundo da manchete como um cinza claro */
+}
+.news-container a {
+    text-decoration: none; /* Remove o sublinhado dos links dentro do contêiner */
+    color: inherit; /* Faz com que a cor do link herde a cor do contêiner */
+}
+h1 {
+    font-size: 25px; /* Define o tamanho da fonte do título principal */
+    font-family: Arial, sans-serif; /* Define a fonte do título principal */
+    text-align: center; /* Centraliza o título principal */
+}
+.more {
+    text-align: center; /* Centraliza o texto "Veja mais!" */
+    font-size: 20px; /* Define o tamanho da fonte do texto "Veja mais!" */
+    margin-top: 20px; /* Adiciona espaço acima do texto "Veja mais!" */
+    font-weight: bold; /* Deixa o texto "Veja mais!" em negrito */
+    color: #333; /* Define a cor do texto "Veja mais!" como um cinza escuro */
+}
+.divider {
+    width: 100%; /* Faz com que a linha divisória ocupe 100% da largura */
+    height: 3px; /* Define a altura da linha divisória */
+    background-color: red; /* Define a cor da linha divisória como vermelha */
+    margin: 10px 0; /* Adiciona espaço acima e abaixo da linha divisória */
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head> <!-- Cabeçalho da página, onde ficam metadados e links para estilos -->
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a largura da página para se ajustar ao dispositivo do usuário -->
+    <title>TabajaraSoccer</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body {
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    font-family: Arial, sans-serif; /* Define a fonte como Arial ou outra similar */
+    background-image: url("Image/tbj2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    </style>
+</head>
+<body> <!-- Corpo da página, onde o conteúdo visível ao usuário é inserido -->
+    <div class="menu"> <!-- Contêiner para o menu horizontal -->
+        <div class="menu-icon" onclick="toggleDropdown()">☰</div> <!-- Ícone de menu com função para abrir/fechar o menu suspenso -->
+        <img src="Image/image.png" alt="Imagem Esquerda"> <!-- Imagem à esquerda no menu -->
+        <div class="title">TBJ SOCCER</div> <!-- Título centralizado no menu -->
+        <img src="Image/logo2.jpeg" alt="Imagem Direita" style="width: 100px;"> <!-- Imagem à direita no menu -->
+        <div id="dropdown-menu" class="dropdown"> <!-- Menu suspenso que aparece ao clicar no ícone -->
+            <a href="https://ge.globo.com/futebol/brasileirao-serie-a/">Brasileirão</a> <!-- Link para Brasileirão -->
+            <a href="https://ge.globo.com/futebol/copa-do-brasil/">Copa do Brasil</a> <!-- Link para Copa do Brasil -->
+            <a href="https://ge.globo.com/sp/futebol/campeonato-paulista/">Paulista</a> <!-- Link para Campeonato Paulista -->
+            <a href="https://ge.globo.com/rj/futebol/campeonato-carioca/">Carioca</a>
+            <a href="https://ge.globo.com/mg/futebol/campeonato-mineiro/">Mineiro</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="criadores.html">Criadores</a>
+        </div>
+    </div>
+    
+    <h1 style="color:white;">Bem vindo ao site do Tabajara Soccer. Aqui você verá notícias e informações sobre o futebol brasileiro.</h1> <!-- Título principal da página -->
+
+    <div class="more"> <!-- Contêiner para o texto "Veja mais!" -->
+        Veja mais!
+    </div>
+    <div class="divider"></div> <!-- Linha divisória vermelha abaixo do texto "Veja mais!" -->
+    
+    <div class="news-grid"> <!-- Grid de notícias, contendo múltiplos contêineres de notícias -->
+        <!-- 1º Container -->
+        <div class="news-container">
+            <a href="https://br.bolavip.com/futebol/depay-vai-jogar-no-brasil-atacante-assina-contrato-de-2-anos-e-sera-anunciado-por-campeao-da-libertadores" target="_blank">
+                <div class="news-image">
+                    <img src="Image/depay.webp" alt="Imagem da Notícia 1">
+                </div>
+                <div class="news-headline">
+                    Depay vai jogar no Brasil: Atacante assina contrato de 2 anos e será anunciado por campeão da Libertadores.
+                </div>
+            </a>
+        </div>
+        <!-- 2º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/futebol-internacional/noticia/2024/09/08/chelsea-e-o-clube-que-mais-gastou-em-reforcos-na-ultima-decada-r-17-bilhoes.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/endrick-vitor-roque.avif" alt="Imagem da Notícia 2">
+                </div>
+                <div class="news-headline">
+                    Chelsea é o clube que mais gastou em reforços na última década: R$ 17 bilhões.
+                </div>
+            </a>
+        </div>
+        <!-- 3º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2024/09/08/com-fabricio-bruno-e-quatro-desfalques-selecao-brasileira-treina-para-enfrentar-o-paraguai.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/dorival.avif" alt="Imagem da Notícia 3">
+                </div>
+                <div class="news-headline">
+                    Com Fabrício Bruno e quatro desfalques, seleção brasileira treina para enfrentar o Paraguai.
+                </div>
+            </a>
+        </div>
+        <!-- 4º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/times/corinthians/noticia/2024/09/08/paulinho-idolo-do-corinthians-anuncia-a-aposentadoria-do-futebol.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/paulinho.avif" alt="Imagem da Notícia 4">
+                </div>
+                <div class="news-headline">
+                    Paulinho, ídolo do Corinthians e jogador de duas Copas do Mundo, anuncia a aposentadoria
+                </div>
+            </a>
+        </div>
+        <!-- 5º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/times/sao-paulo/noticia/2024/09/08/sao-paulo-decide-pedir-anulacao-de-jogo-contra-o-fluminense.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/sao-paulo.png" alt="Imagem da Notícia 5">
+                </div>
+                <div class="news-headline">
+                    São Paulo decide pedir anulação de jogo contra o Fluminense.
+                </div>
+            </a>
+        </div>
+        <!-- 6º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/futebol-feminino/brasileiro-feminino/noticia/2024/09/08/brasileirao-feminino-define-finalistas-neste-domingo-veja-onde-assistir-as-semis.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/brfem.webp" alt="Imagem da Notícia 6">
+                </div>
+                <div class="news-headline">
+                    Brasileirão Feminino define finalistas neste domingo; veja onde assistir às semis!
+                </div>
+            </a>
+        </div>
+        <!-- 7º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/times/fluminense/noticia/2024/09/08/ha-vida-no-fluminense-sem-arias-comentaristas-analisam-importancia-do-colombiano-em-2024.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/arias.avif" alt="Imagem da Notícia 7">
+                </div>
+                <div class="news-headline">
+                    Há vida no Fluminense sem Arias? Comentaristas analisam importância do colombiano em 2024!
+                </div>
+            </a>
+        </div>
+        <!-- 8º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/rs/futebol/times/gremio/noticia/2024/09/08/gremio-entrara-com-pedido-de-efeito-suspensivo-para-renato-e-evita-definir-substituto.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/renato.avif" alt="Imagem da Notícia 8">
+                </div>
+                <div class="news-headline">
+                    Grêmio entrará com pedido de efeito suspensivo para Renato e evita definir "substituto"
+                </div>
+            </a>
+        </div>
+        <!-- 9º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/times/vasco/noticia/2024/09/08/leo-volta-ao-time-titular-para-jogos-decisivos-e-ganha-apoio-de-companheiros-e-diretoria-do-vasco.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/leo.avif" alt="Imagem da Notícia 9">
+                </div>
+                <div class="news-headline">
+                    Léo volta ao time titular para jogos decisivos e ganha apoio de companheiros e diretoria do Vasco
+                </div>
+            </a>
+        </div>
+        <!-- 10º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/times/corinthians/noticia/2024/09/08/com-desfalques-por-data-fifa-ramon-ensaia-corinthians-para-jogo-com-o-juventude.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/garro.avif" alt="Imagem da Notícia 10">
+                </div>
+                <div class="news-headline">
+                    Com desfalques por Data Fifa, Ramón ensaia Corinthians para jogo com o Juventude
+                </div>
+            </a>
+        </div>
+        <!-- 11º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2024/09/08/dorival-ve-vini-junior-sofrendo-cobranca-semelhante-a-de-neymar-na-selecao-e-prega-paciencia.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/vini.avif" alt="Imagem da Notícia 11">
+                </div>
+                <div class="news-headline">
+                    Dorival vê Vini Júnior sofrendo cobrança semelhante à de Neymar na Seleção e prega paciência!
+                </div>
+            </a>
+        </div>
+        <!-- 12º Container -->
+        <div class="news-container">
+            <a href="https://ge.globo.com/futebol/futebol-internacional/futebol-saudita/noticia/2024/09/08/neymar-vai-precisar-de-mais-dois-meses-de-tratamento-diz-jornal-saudita.ghtml" target="_blank">
+                <div class="news-image">
+                    <img src="Image/neymar.avif" alt="Imagem da Notícia 12">
+                </div>
+                <div class="news-headline">
+                    Neymar vai precisar de mais dois meses de tratamento, diz jornal saudita!
+                </div>
+            </a>
+        </div>
+    </div>
+    <p>Produzido por:</p>
+    <p></p>
+    <p>Vinícius Oliveira Dinis  Dias</p>
+    <p>Matheus de Moura Holanda</p>
+</body>
+
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-menu");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    
+        // Fecha o menu suspenso se o usuário clicar fora dele
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-icon')) {
+                var dropdowns = document.getElementsByClassName("dropdown");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</html>
+
+    

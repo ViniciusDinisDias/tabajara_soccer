@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Futebol Brasileiro</title>
+    <style>
+        body {
+            background-image: url("Image/tbj2.jpeg");
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form {
+            background-color: red;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: white;
+        }
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Futebol Brasileiro</h1>
+    <h2>Teste seus conhecimentos sobre o futebol brasileiro!</h2>
+    <form id="quizForm">
+
+        <!-- Checkbox Questions -->
+        <div class="question">
+            <h3>1. Quais desses times ganharam a Copa Libertadores?</h3>
+            <label><input type="checkbox" name="q1" value="a"> Flamengo</label>
+            <label><input type="checkbox" name="q1" value="b"> Corinthians</label>
+            <label><input type="checkbox" name="q1" value="c"> São Paulo</label>
+            <label><input type="checkbox" name="q1" value="d"> Botafogo</label>
+        </div>
+        <div class="question">
+            <h3>2. Quais desses jogadores foram artilheiros do Brasileirão?</h3>
+            <label><input type="checkbox" name="q2" value="a"> Romário</label>
+            <label><input type="checkbox" name="q2" value="b"> Ronaldo</label>
+            <label><input type="checkbox" name="q2" value="c"> Neymar</label>
+            <label><input type="checkbox" name="q2" value="d"> Pelé</label>
+        </div>
+
+        <!-- Radio Questions -->
+        <div class="question">
+            <h3>3. Qual time é conhecido como "Galo"?</h3>
+            <label><input type="radio" name="q3" value="a"> Santos</label>
+            <label><input type="radio" name="q3" value="b"> Atlético Mineiro</label>
+            <label><input type="radio" name="q3" value="c"> Flamengo</label>
+        </div>
+        <div class="question">
+            <h3>4. Qual clube brasileiro tem mais títulos do Campeonato Brasileiro?</h3>
+            <label><input type="radio" name="q4" value="a"> Palmeiras</label>
+            <label><input type="radio" name="q4" value="b"> São Paulo</label>
+            <label><input type="radio" name="q4" value="c"> Corinthians</label>
+        </div>
+
+        <!-- Submit Questions -->
+        <div class="question">
+            <h3>5. Qual foi o ano da primeira Copa do Mundo que o Brasil venceu?</h3>
+            <input type="text" name="q5">
+        </div>
+        <div class="question">
+            <h3>6. Em que ano o Brasil sediou a Copa do Mundo pela segunda vez?</h3>
+            <input type="text" name="q6">
+        </div>
+
+        <!-- Button Questions -->
+        <div class="question">
+            <h3>7. Quem é o maior artilheiro da história do Campeonato Brasileiro?</h3>
+            <button type="button">Revelar Resposta</button>
+        </div>
+        <div class="question">
+            <h3>8. Qual é o estádio de futebol mais antigo do Brasil ainda em uso?</h3>
+            <button type="button">Revelar Resposta</button>
+        </div>
+
+        <!-- Text Questions -->
+        <div class="question">
+            <h3>9. Qual jogador é conhecido como "Rei do Futebol"?</h3>
+            <input type="text" name="q9">
+        </div>
+        <div class="question">
+            <h3>10. Qual é o maior clássico do futebol brasileiro?</h3>
+            <input type="text" name="q10">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
